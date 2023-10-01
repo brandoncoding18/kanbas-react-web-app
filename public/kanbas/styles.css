@@ -1,0 +1,135 @@
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 85px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  align-items: fixed;
+  text-align: left;
+  display: fixed;
+  float: left;
+}
+
+.sidebar {
+  height: 100%;
+  width: 85px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 100px;
+  
+  margin: 0px;
+  padding: 0px;
+  padding-top: 80px;
+  align-items: fixed;
+  text-align: left;
+  display: fixed;
+  float: left;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 18px;
+  text-decoration: none;
+  font-size: 12px;
+  color: red;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: left;
+  
+
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 18px;
+  text-decoration: none;
+  font-size: 16px;
+  color: red;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: left;
+  
+
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a.active {
+  
+  background-color: white;
+}
+
+.sidebar a.active {
+  
+  color: black;
+}
+
+.vertical {
+  border-left: 5px solid black;
+  height: 30px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  float: left;
+  height: 100%;
+  display: flex;
+  margin-top: 0px; 
+  margin-left: 100px;
+  border-bottom-style: solid;
+  border-bottom-color: black; 
+  
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  left: 1000px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+
+
+.main {
+  align-items: top;
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}
