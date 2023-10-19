@@ -1,5 +1,5 @@
 import Assignment3 from "./a3";
-import Nav from "../Nav";
+import Nav from "../Nav.js";
 function Labs() {
  return (
    <div>

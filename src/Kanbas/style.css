@@ -1,0 +1,70 @@
+.list-group {
+    background-color: black;
+    color : red;
+    text-align: center;
+    width : 85px; 
+
+  }
+
+.list-group a{
+    border-color : black;
+    color : white; 
+    background-color: black;
+    font-size : 12px; 
+}
+
+.course-nav {
+    margin-top: 60px;
+    margin-left: 20px; 
+    color : red;
+    text-align: left;
+    font-size: 30px
+    
+
+}
+.course-nav a { 
+    border-color : black;
+    color : red; 
+}
+
+.course-nav a.active {
+    border-color: black;
+    color: black;
+    border-left: solid; 
+}
+.list-course {
+    grid-template-columns: auto;
+    box-sizing: border-box; 
+    padding: 0px 50px; 
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.list-course .list-course-item {
+    margin-right : 100px;
+    width: 50%
+}
+.list-course a { 
+    box-shadow: 0px 4px 2px grey;
+    font-size: large;
+    box-shadow: 0cqmax;
+    background-color: lightblue;
+
+}
+
+.list-group a.active{
+    background-color: white; 
+    color: red;
+    border-color : white
+    
+}
+
+.list-course-name {
+    padding-left: 30px;
+    background-color: white   
+}
+.active {
+    background-color: white;
+}

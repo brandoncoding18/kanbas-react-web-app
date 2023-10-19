@@ -8,3 +8,7 @@ function Classes() {
                                         wd-fg-black wd-padding-10px`}>
           Dangerous background
         </div>
+      </div>
+    )
+}
+export default Classes

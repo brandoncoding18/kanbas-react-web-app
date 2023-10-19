@@ -16,14 +16,14 @@ function Grades() {
           <tbody>
             {enrollments.map((enrollment) => {
               const user = db.users.find((user) => user._id === enrollment.user);
-              return (
+              return ( user && (
                 <tr>
                    <td>{user.firstName} {user.lastName}</td>
                    {assignments.map((assignment) => {
                      const grade = db.grades.find(
                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);
                        return (<td>{grade?.grade || ""}</td>);})}
-                </tr>);
+                </tr>));
             })}
           </tbody></table>
       </div></div>);

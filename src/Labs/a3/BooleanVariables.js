@@ -25,5 +25,3 @@ return (
     notTrue   = {notTrue + ""}
   </div>
 );
-
-export default BooleanVariables
