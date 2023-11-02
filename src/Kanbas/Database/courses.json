@@ -10,20 +10,20 @@
       "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
     },
 
-    { "_id": "RS104",
-      "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    { "_id": "CS1500",
+      "name": "Fundamentals of Computer Science", "number": "CS1500", "startDate": "2023-01-10", "endDate": "2023-05-15"
     },
-    { "_id": "RS105",
-      "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    { "_id": "CS1501",
+      "name": "Lab for Fundamentals of Computer Science", "number": "CS1501", "startDate": "2023-01-10", "endDate": "2023-05-15"
     },
     { "_id": "RS106",
-      "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
+      "name": "Lab for Rocket Propulsion", "number": "RS106", "startDate": "2023-01-10", "endDate": "2023-05-15"
     },
     { "_id": "RS107",
-      "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
+      "name": "Lab for Spacecraft Design", "number": "RS107", "startDate": "2023-01-10", "endDate": "2023-05-15"
     },
-    { "_id": "RS103",
-      "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    { "_id": "RS108",
+      "name": "Lab for Aerodynamics", "number": "RS108", "startDate": "2023-01-10", "endDate": "2023-05-15"
     }
 
   ]

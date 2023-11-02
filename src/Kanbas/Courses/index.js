@@ -2,15 +2,16 @@ import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
-import { FaBars} from "react-icons/fa";
+import Home from "./Home";
+import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/AssignmentEditor";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
-      <h1 style = {{color : "red"}}><FaBars/> {course._id}</h1>
-      <h1>{this.props.location.pathname} </h1>
+      <h1>Course {course.name}</h1>
       <CourseNavigation />
       <div>
         <div
@@ -22,12 +23,12 @@ function Courses() {
         >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<h1>Home</h1>} />
+            <Route path="Home" element={<h1><Home/></h1>} />
             <Route path="Modules" element={<h1><Modules/></h1>} />
-            <Route path="Assignments" element={<h1>Assignments</h1>} />
+            <Route path="Assignments" element={<h1><Assignments/></h1>} />
             <Route
               path="Assignments/:assignmentId"
-              element={<h1>Assignment Editor</h1>}
+              element={<h1><AssignmentEditor/></h1>}
             />
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
