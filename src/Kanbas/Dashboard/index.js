@@ -41,6 +41,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
 
   return (
     <div>
+
       <h1>Dashboard</h1>
       <div className="row">
         {courses.map((course) => (
@@ -113,7 +114,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
 
     </div>
 
-  );
+
 
     </div>
   );
