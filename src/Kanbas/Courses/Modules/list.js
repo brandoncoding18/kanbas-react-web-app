@@ -51,12 +51,12 @@ function ModuleList() {
             dispatch(setModule({ ...module, name: e.target.value } ))
           } style={{width : '300px'}}/>
 
-<button
-          onClick={() =>handleUpdateModule}className="btn btn-primary" style = {{marginLeft: "10px"}}>
+        <button
+          onClick={handleUpdateModule}className="btn btn-primary" style = {{marginLeft: "10px"}}>
           Update
         </button>
         <button
-          onClick={() => handleAddModule} className="btn btn-success">
+          onClick={handleAddModule} className="btn btn-success">
           Add
         </button>
           <textarea
