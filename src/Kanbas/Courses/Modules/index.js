@@ -1,4 +1,5 @@
-import ModuleList from "./ModuleList";
+import ModuleList from "./list";
+
 function Modules() {
   return (
     <div>

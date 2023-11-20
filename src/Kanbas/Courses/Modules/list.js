@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -6,10 +6,38 @@ import {
   deleteModule,
   updateModule,
   setModule,
-} from "./modulesReducer";
+  setModules,
+} from "./reducer";
+import { findModulesForCourse, createModule } from "./client";
+import * as client from "./client";
+
 import { FaAlignRight } from "react-icons/fa";
 function ModuleList() {
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
@@ -24,11 +52,11 @@ function ModuleList() {
           } style={{width : '300px'}}/>
 
 <button
-          onClick={() => dispatch(updateModule(module))}className="btn btn-primary" style = {{marginLeft: "10px"}}>
+          onClick={() =>handleUpdateModule}className="btn btn-primary" style = {{marginLeft: "10px"}}>
           Update
         </button>
         <button
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}className="btn btn-success">
+          onClick={() => handleAddModule} className="btn btn-success">
           Add
         </button>
           <textarea
@@ -50,7 +78,7 @@ function ModuleList() {
           <li key={index} className="list-group-item" style= {{color : "black", fontSize : "20px"}}>
             <h3 >{module.name}
             <button
-              onClick={() => dispatch(deleteModule(module._id))} className="btn btn-danger" style= {{alignItems : "right"}}>
+              onClick={() => handleDeleteModule(module._id) } style= {{alignItems : "right"}}>
               Delete
             </button>
             <button

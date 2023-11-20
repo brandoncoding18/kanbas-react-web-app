@@ -1,17 +1,4 @@
-.list-group {
-    background-color: black;
-    color : red;
-    text-align: center;
-    width : 85px; 
 
-  }
-
-.list-group a{
-    border-color : black;
-    color : white; 
-    background-color: black;
-    font-size : 12px; 
-}
 
 .list-course-edit {
     background-color: white;

@@ -1,5 +1,4 @@
-import ModuleList from "../Modules/ModuleList";
-
+import ModuleList from "../Modules/list.js"
 
 function Home() {
   return (

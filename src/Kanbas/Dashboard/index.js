@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
-import db from "../Database";
 import { FaEllipsisV} from "react-icons/fa";
 import { FaFile} from "react-icons/fa";
 function Dashboard({ courses, course, setCourse, addNewCourse,
