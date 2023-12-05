@@ -13,6 +13,7 @@ function Project() {
 
       </div>
       <div className="col-10">
+        
         <Routes>
           <Route path="/" element={<Navigate to="/project/home" />} />
           <Route path="/signin" element={<Signin />} />

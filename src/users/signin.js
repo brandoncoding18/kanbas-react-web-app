@@ -10,6 +10,8 @@ function Signin() {
   };
   return (
     <div>
+      {process.env.REACT_APP_API_BASE}
+      {process.env.REACT_APP_BASE_API_URL}
       <h1>Signin</h1>
 
       <input value={credentials.username} onChange={(e) => setCredentials({...credentials, username: e.target.value})}/>
